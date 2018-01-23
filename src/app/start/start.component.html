@@ -1,0 +1,17 @@
+<div class="new-player container">
+  <form>
+    <h2>Get Your Adventure On</h2>
+    <div class="row">
+      <div class="col form-group">
+        <input class="form-control" #newName placeholder="Name" type="text">
+      </div>
+      <div class="col">
+        <input class="form-control form-group" #newHairColor placeholder="Hair Color" type="text">
+      </div>
+    </div>
+    <input class="form-control form-group" #newBackstory placeholder="Backstory" type="text">
+    <input class="form-control form-group" #newSkills placeholder="Skills" type="text">
+    <input class="form-control form-group" #newWeaponOfChoice placeholder="Weapon of Choice" type="text">
+    <button (click)="submitForm(newName.value, newBackstory.value, newSkills.value, newHairColor.value, newWeaponOfChoice.value)" type="button" name="button" class="btn btn-info mx-auto">Submit</button>
+  </form>
+</div>
