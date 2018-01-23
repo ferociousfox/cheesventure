@@ -13,8 +13,9 @@ export class StartComponent implements OnInit {
 
   ngOnInit() {
   }
-  submitform(name, history, skills, hairColor, weapon) {
+  submitForm(name, history, skills, hairColor, weapon) {
     let newCharacter: Player = new Player(name, history, skills, hairColor, weapon);
+    console.log(newCharacter);
     this.newUserSender.emit(newCharacter);
   }
 }
